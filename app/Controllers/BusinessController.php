@@ -1,37 +1,36 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: remtr
+ * Created by VSCODE
+ * User: Aaron Vong
  * Date: 29-Jan-19
  * Time: 11:53 AM
  */
 namespace App\Controllers;
 use CodeIgniter\Controller;
-use Influencer;
+use Business;
 use CodeIgniter\API\ResponseTrait;
 
-class InfluencerController extends Controller {
+class BusinessController extends Controller {
 
     use ResponseTrait;
 
     public function index() {
-        $model = new Influencer();
-
-        $influencer = $model->findAll();
-        return $this->respond($influencer, 200, 'yeet');
+        $model = new Business();
+        $business = $model->findAll();
+        return $this->respond($business, 200, 'yeet');
     }
 
     public function show($id) {
-        $model = new Influencer();
-        $influencer = $model->find($id);
-        return $this->respond($influencer, 200, 'student found');
+        $model = new Business();
+        $business = $model->find($id);
+        return $this->respond($business, 200, 'business found');
     }
 
     public function new() {
         return $this->failUnauthorized('Unauthorized/Not implemented', 401, "error");
     }
 
-    public function edit($id) {
+    public function edit() {
         return $this->failUnauthorized('No edits allowed/Not implemented', 401, "error");
     }
 
@@ -39,11 +38,12 @@ class InfluencerController extends Controller {
         return $this->failUnauthorized('No creation allowed/Not implemented', 401, "error");
     }
 
-    public function update($id) {
+    public function update() {
         return $this->failUnauthorized('No updates allowed/Not implemented', 401, "error");
     }
 
-    public function delete($id) {
+    public function delete() {
         return $this->failUnauthorized('No deletes allowed/Not implemented', 401, "error");
     }
 }
+?>
