@@ -17,7 +17,11 @@ class InfluencerController extends Controller {
     public function index() {
         $model = new Influencer();
         $students = $model->findAll();
+<<<<<<< HEAD
+        return $this->response->setStatusCode(200)->setJSON($students);
+=======
         return $this->respond($students, 200, 'yeet');
+>>>>>>> d3b69656697e29860c45c06455087b3fb0e4777b
     }
 
     public function show($id) {
