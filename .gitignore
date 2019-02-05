@@ -19,4 +19,5 @@ application/logs/*
 /nbproject/
 
 .idea/*
-devstarter/writable/debugbar/*
+writable/debugbar/*
+composer.lock
