@@ -16,18 +16,14 @@ class InfluencerController extends Controller {
 
     public function index() {
         $model = new Influencer();
-        $students = $model->findAll();
-<<<<<<< HEAD
-        return $this->response->setStatusCode(200)->setJSON($students);
-=======
-        return $this->respond($students, 200, 'yeet');
->>>>>>> d3b69656697e29860c45c06455087b3fb0e4777b
+        $influencer = $model->findAll();
+        return $this->respond($influencer, 200, 'yeet');
     }
 
     public function show($id) {
         $model = new Influencer();
-        $student = $model->find($id);
-        return $this->respond($student, 200, 'student found');
+        $influencer = $model->find($id);
+        return $this->respond($influencer, 200, 'student found');
     }
 
     public function new() {
