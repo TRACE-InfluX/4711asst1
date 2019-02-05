@@ -10,11 +10,11 @@ use CodeIgniter\Model;
 class Business extends Model {
 
     protected $data=[
-        ['id' => '1', 'name'=>'Leo Lamriello', 'age'=>'32', 'industry'=>'Food'],
-        ['id' => '2', 'name'=>'Suzie Kwan', 'age'=>'23', 'industry'=>'Marketing'],
-        ['id' => '3', 'name'=>'Tim Hortons', 'age'=>'999', 'industry'=>'Food'],
-        ['id' => '4', 'name'=>'Nintendo', 'age'=>'777', 'industry'=>'Entertainment'],
-        ['id' => '5', 'name'=>'McDonalds', 'age'=>'64', 'industry'=>'Food']
+        '1'=>['id' => '1', 'name'=>'Leo Lamriello', 'age'=>'32', 'industry'=>'Food'],
+        '2'=>['id' => '2', 'name'=>'Suzie Kwan', 'age'=>'23', 'industry'=>'Marketing'],
+        '3'=>['id' => '3', 'name'=>'Tim Hortons', 'age'=>'999', 'industry'=>'Food'],
+        '4'=>['id' => '4', 'name'=>'Nintendo', 'age'=>'777', 'industry'=>'Entertainment'],
+        '5'=>['id' => '5', 'name'=>'McDonalds', 'age'=>'64', 'industry'=>'Food']
     ];
 
     // Returns a record of the businesses with a passed in ID
