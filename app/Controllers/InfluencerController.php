@@ -17,11 +17,8 @@ class InfluencerController extends Controller {
     public function index() {
         $model = new Influencer();
         $students = $model->findAll();
-<<<<<<< HEAD
+
         return $this->response->setStatusCode(200)->setJSON($students);
-=======
-        return $this->respond($students, 200, 'yeet');
->>>>>>> d3b69656697e29860c45c06455087b3fb0e4777b
     }
 
     public function show($id) {
@@ -34,7 +31,7 @@ class InfluencerController extends Controller {
         return $this->failUnauthorized('Unauthorized/Not implemented', 401, "error");
     }
 
-    public function edit() {
+    public function edit($id) {
         return $this->failUnauthorized('No edits allowed/Not implemented', 401, "error");
     }
 
@@ -42,12 +39,11 @@ class InfluencerController extends Controller {
         return $this->failUnauthorized('No creation allowed/Not implemented', 401, "error");
     }
 
-    public function update() {
+    public function update($id) {
         return $this->failUnauthorized('No updates allowed/Not implemented', 401, "error");
     }
 
-    public function delete() {
+    public function delete($id) {
         return $this->failUnauthorized('No deletes allowed/Not implemented', 401, "error");
     }
 }
-?>
