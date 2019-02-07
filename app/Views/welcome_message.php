@@ -112,11 +112,11 @@
                 <form action="<?php echo site_url('influencer/1/edit')?>" method="get">
                     <button type="submit">Edit</button>
                 </form>
-                <form action="<?php echo site_url('influencer/update/1')?>" method="post">
+                <form action="<?php echo site_url('influencer/1')?>" method="post">
                     <input type="hidden" name="_method" value="put" />
                     <button type="submit">Update</button>
                 </form>
-                <form action="<?php echo site_url('influencer/delete/1')?>" method="post">
+                <form action="<?php echo site_url('influencer/1/delete')?>" method="post">
                     <button type="submit">Delete</button>
                 </form>
                 <li><a href="<?php echo site_url('influencer/2')?>">Dolan Lamoriello</a></li>
@@ -129,7 +129,7 @@
             <form action="<?php echo site_url('influencer/new')?>" method="get">
                 <button type="submit">New</button>
             </form>
-            <form action="<?php echo site_url('influencer/create')?>" method="post">
+            <form action="<?php echo site_url('influencer')?>" method="post">
                 <button type="submit">Create</button>
             </form>
 
