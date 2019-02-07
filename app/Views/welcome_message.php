@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Welcome to CodeIgniter</title>
+		<title>Welcome to InfluX</title>
 
 		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
 	</head>
@@ -75,34 +75,13 @@
 			a:active,
 			a:link,
 			a:visited {
-				color: #dd4814;
+				color: dodgerblue;
 			}
 		</style>
 
 		<div class="wrap">
 
-			<h1>Welcome to CodeIgniter</h1>
-
-			<p class="version">version <?= CodeIgniter\CodeIgniter::CI_VERSION ?></p>
-
-			<div class="logo">
-				<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-					 width="155.000000px" height="200.000000px" viewBox="0 0 155.000000 200.000000"
-					 preserveAspectRatio="xMidYMid meet">
-				<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-				<path d="M737 1963 c22 -79 -7 -185 -78 -290 -18 -26 -107 -122 -197 -213
-					  -239 -240 -336 -371 -403 -544 -79 -206 -78 -408 5 -582 64 -134 212 -264 361
-					  -314 l60 -20 -30 22 c-210 152 -229 387 -48 588 25 27 48 50 51 50 4 0 7 -27
-					  7 -61 0 -57 2 -62 37 -95 30 -27 46 -34 78 -34 56 0 99 24 116 65 29 69 16
-					  120 -50 205 -105 134 -117 233 -43 347 l31 48 7 -47 c13 -82 58 -129 250 -258
-					  209 -141 306 -261 328 -405 11 -72 -1 -161 -31 -218 -27 -53 -112 -143 -165
-					  -174 -24 -14 -43 -26 -43 -28 0 -2 24 4 53 14 241 83 427 271 482 486 19 76
-					  19 202 -1 285 -35 152 -146 305 -299 412 l-70 49 -6 -33 c-8 -48 -26 -76 -59
-					  -93 -45 -23 -103 -19 -138 10 -67 57 -78 146 -37 305 30 116 32 206 5 291 -27
-					  89 -104 206 -162 247 -17 13 -18 12 -11 -15z"></path>
-				</g>
-				</svg>
-			</div>
+			<h1>Welcome to InfluX</h1>
 
             <div class="guide">
 
@@ -134,30 +113,30 @@
             </form>
 
             <br/><br/>
-
-<!--            <li><a href="--><?php //echo site_url('students')?><!--">Students</a></li>-->
-<!--            <ol>-->
-<!--                <li><a href="--><?php //echo site_url('students/1')?><!--">Student 1</a></li>-->
-<!--                <form action="--><?php //echo site_url('students/1/edit')?><!--" method="get">-->
-<!--                    <button type="submit">Edit</button>-->
-<!--                </form>-->
-<!--                <form action="--><?php //echo site_url('students/update/1')?><!--" method="post">-->
-<!--                    <button type="submit">Update</button>-->
-<!--                </form>-->
-<!--                <form action="--><?php //echo site_url('students/delete/1')?><!--" method="post">-->
-<!--                    <button type="submit">Delete</button>-->
-<!--                </form>-->
-<!--                <li><a href="--><?php //echo site_url('students/2')?><!--">Student 2</a></li>-->
-<!--                <li><a href="--><?php //echo site_url('students/3')?><!--">Student 3</a></li>-->
-<!--                <li><a href="--><?php //echo site_url('students/4')?><!--">Student 4</a></li>-->
-<!--                <li><a href="--><?php //echo site_url('students/5')?><!--">Student 5</a></li>-->
-<!--            </ol>-->
-<!--            <form action="--><?php //echo site_url('students/new')?><!--" method="get">-->
-<!--                <button type="submit">New</button>-->
-<!--            </form>-->
-<!--            <form action="--><?php //echo site_url('students/create')?><!--" method="post">-->
-<!--                <button type="submit">Create</button>-->
-<!--            </form>-->
+                <li><a href="<?php echo site_url('business')?>">Businesses</a></li>
+                <ol>
+                    <li><a href="<?php echo site_url('business/1')?>">Leo Lamriello</a></li>
+                    <form action="<?php echo site_url('business/1/edit')?>" method="get">
+                        <button type="submit">Edit</button>
+                    </form>
+                    <form action="<?php echo site_url('business/1')?>" method="post">
+                        <input type="hidden" name="_method" value="put" />
+                        <button type="submit">Update</button>
+                    </form>
+                    <form action="<?php echo site_url('business/1/delete')?>" method="post">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <li><a href="<?php echo site_url('business/2')?>">Suzie Kwan</a></li>
+                    <li><a href="<?php echo site_url('business/3')?>">Tim Hortons</a></li>
+                    <li><a href="<?php echo site_url('business/4')?>">Nintendo</a></li>
+                    <li><a href="<?php echo site_url('business/5')?>">McDonalds</a></li>
+                </ol>
+                <form action="<?php echo site_url('business/new')?>" method="get">
+                    <button type="submit">New</button>
+                </form>
+                <form action="<?php echo site_url('business')?>" method="post">
+                    <button type="submit">Create</button>
+                </form>
 
 			</div>
 
