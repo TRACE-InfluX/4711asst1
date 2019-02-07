@@ -16,6 +16,7 @@ class InfluencerController extends Controller {
 
     public function index() {
         $model = new Influencer();
+
         $influencer = $model->findAll();
         return $this->respond($influencer, 200, 'yeet');
     }
@@ -30,7 +31,7 @@ class InfluencerController extends Controller {
         return $this->failUnauthorized('Unauthorized/Not implemented', 401, "error");
     }
 
-    public function edit() {
+    public function edit($id) {
         return $this->failUnauthorized('No edits allowed/Not implemented', 401, "error");
     }
 
@@ -38,12 +39,11 @@ class InfluencerController extends Controller {
         return $this->failUnauthorized('No creation allowed/Not implemented', 401, "error");
     }
 
-    public function update() {
+    public function update($id) {
         return $this->failUnauthorized('No updates allowed/Not implemented', 401, "error");
     }
 
-    public function delete() {
+    public function delete($id) {
         return $this->failUnauthorized('No deletes allowed/Not implemented', 401, "error");
     }
 }
-?>

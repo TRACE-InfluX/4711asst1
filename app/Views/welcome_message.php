@@ -104,28 +104,60 @@
 				</svg>
 			</div>
 
-			<div class="guide">
-				<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+            <div class="guide">
 
-				<p>If you would like to edit this page you'll find it located at:</p>
+            <li><a href="<?php echo site_url('influencer')?>">Influencers</a></li>
+            <ol>
+                <li><a href="<?php echo site_url('influencer/1')?>">Willis Jackson</a></li>
+                <form action="<?php echo site_url('influencer/1/edit')?>" method="get">
+                    <button type="submit">Edit</button>
+                </form>
+                <form action="<?php echo site_url('influencer/update/1')?>" method="post">
+                    <input type="hidden" name="_method" value="put" />
+                    <button type="submit">Update</button>
+                </form>
+                <form action="<?php echo site_url('influencer/delete/1')?>" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+                <li><a href="<?php echo site_url('influencer/2')?>">Dolan Lamoriello</a></li>
+                <li><a href="<?php echo site_url('influencer/3')?>">Suzy Bae</a></li>
+                <li><a href="<?php echo site_url('influencer/4')?>">Chantelle Davidson</a></li>
+                <li><a href="<?php echo site_url('influencer/5')?>">Elias Pettersson</a></li>
+                <li><a href="<?php echo site_url('influencer/6')?>">Aaron Vong</a></li>
+                <li><a href="<?php echo site_url('influencer/6')?>">Billy Bob Karlsson</a></li>
+            </ol>
+            <form action="<?php echo site_url('influencer/new')?>" method="get">
+                <button type="submit">New</button>
+            </form>
+            <form action="<?php echo site_url('influencer/create')?>" method="post">
+                <button type="submit">Create</button>
+            </form>
 
-				<pre>
-				<code>
-					app/Views/welcome_message.php
-				</code>
-				</pre>
+            <br/><br/>
 
-				<p>The corresponding controller for this page is found at:</p>
-
-				<pre>
-				<code>
-					app/Controllers/Home.php
-				</code>
-				</pre>
-
-				<p>If you are exploring CodeIgniter for the very first time, you
-					should start by reading the
-					<a href="https://codeigniter4.github.io/CodeIgniter4">User Guide</a>.</p>
+<!--            <li><a href="--><?php //echo site_url('students')?><!--">Students</a></li>-->
+<!--            <ol>-->
+<!--                <li><a href="--><?php //echo site_url('students/1')?><!--">Student 1</a></li>-->
+<!--                <form action="--><?php //echo site_url('students/1/edit')?><!--" method="get">-->
+<!--                    <button type="submit">Edit</button>-->
+<!--                </form>-->
+<!--                <form action="--><?php //echo site_url('students/update/1')?><!--" method="post">-->
+<!--                    <button type="submit">Update</button>-->
+<!--                </form>-->
+<!--                <form action="--><?php //echo site_url('students/delete/1')?><!--" method="post">-->
+<!--                    <button type="submit">Delete</button>-->
+<!--                </form>-->
+<!--                <li><a href="--><?php //echo site_url('students/2')?><!--">Student 2</a></li>-->
+<!--                <li><a href="--><?php //echo site_url('students/3')?><!--">Student 3</a></li>-->
+<!--                <li><a href="--><?php //echo site_url('students/4')?><!--">Student 4</a></li>-->
+<!--                <li><a href="--><?php //echo site_url('students/5')?><!--">Student 5</a></li>-->
+<!--            </ol>-->
+<!--            <form action="--><?php //echo site_url('students/new')?><!--" method="get">-->
+<!--                <button type="submit">New</button>-->
+<!--            </form>-->
+<!--            <form action="--><?php //echo site_url('students/create')?><!--" method="post">-->
+<!--                <button type="submit">Create</button>-->
+<!--            </form>-->
 
 			</div>
 
